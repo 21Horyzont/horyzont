@@ -392,8 +392,10 @@ body {
 	height: 200%;
 }
 @media screen and (max-width: 481px){
+    .logo {
+        background-size: 130vh;
+    }
     .tlo {
-        height: 150px;
         height: 150px;
     }
     .kadra{
@@ -408,6 +410,7 @@ body {
     .onastlo {
         height: 150px;
         height: 150px;
+        
     }
     .onas{
         height: 240px;
