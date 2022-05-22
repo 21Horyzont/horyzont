@@ -1,0 +1,63 @@
+.header {
+    color:rgb(106, 134, 74);
+    min-height: 100px;
+    text-align: center;
+    font-size:70px;
+    text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
+  }
+  .main {
+    margin: 0 auto;
+    width: 65%;
+    min-height: 400px;
+    background-color: rgba(255, 255, 255, 0.788);
+  } 
+  
+  body {
+    margin: auto;
+    font-family: "Museo 300";
+    text-align: center;
+    font-size: 1.2em;
+    
+  }
+  .insta{
+     width: 15%;
+     height: auto;
+    }
+    .parallax {
+      background-image: url("taian.jpg");
+      position: fixed;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      width:100%;
+      height: 100%; 
+      background-size: cover;
+      z-index: -1;
+  }
+  h2 {
+    padding:0;
+    margin: 0;
+  }
+  b {
+      color: #70B620;
+  }
+  hr {
+      width:80%;
+  }
+  p {
+      text-align: center;
+  }
+  .zdj{
+
+   width: 550px;
+
+  }
+  @media screen and (max-width: 481px){
+    .main {
+      min-height: 400px;
+      font-size: 0.9em;
+    }
+  }
+  
+  
+    

@@ -1,0 +1,466 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+.parallax {
+    background-image: url("g1.jpg");
+    position: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width:100%;
+    height: 100%; 
+    background-size: cover;
+    z-index: -1;
+}
+
+.tekstjeden {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+.kadra {
+	flex-grow: 1;
+	order: 1;
+	position: relative;
+	width: 25%;
+	height: 25%;
+	margin: 2%;
+}
+.tlo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("KADRA.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: blur(2px);
+    -webkit-filter: blur(2px);
+    transition: 0.5s;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+.kadra:hover > .tlo {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transition: 0.5s;
+    opacity: 1;
+}
+.onastlo {
+	position: absolute;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-image: url("nas.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+	filter: blur(2px);
+    -webkit-filter: blur(2px);
+    transition: 0.5s;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+.onas:hover > .onastlo {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transition: 0.5s;
+    opacity: 1;
+}
+.onas {
+	
+	flex-grow: 2;
+	order: 2;
+	position: relative;
+	width: 25%;
+	height: 25%;
+	margin: 2%;
+}
+.tekstdwa {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+.galeria {
+	flex-grow: 1;
+	order: 3;
+	position: relative;
+	
+	width: 25%;
+	height: 25%;
+	margin: 2%;
+}
+.galeriatlo {
+	width: 100%;
+	height: 100%;
+	background-image: url("galeria.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+	filter: blur(2px);
+    -webkit-filter: blur(2px);
+    transition: 0.5s;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+.teksttrzy {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+.galeria:hover > .galeriatlo {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transition: 0.5s;
+    opacity: 1;
+}
+.logo {
+    
+    background-image: url("LogoHoryzont.png");
+    background-position: center;
+    background-size: cover;
+    background-size: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-repeat: no-repeat;
+    
+}
+.aktualnosci {
+	flex-grow: 4;
+	order: 2;
+	position: relative;
+	width: 25%;
+	height: 25%;
+	margin: 2%;
+}
+.aktualnoscitlo {
+	width: 100%;
+	height: 100%;
+	background-image: url("akt.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+	filter: blur(2px);
+    -webkit-filter: blur(2px);
+    transition: 0.5s;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+.tekstcztery {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+.aktualnosci:hover > .aktualnoscitlo {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transition: 0.5s;
+    opacity: 1;
+}
+.taian {
+	flex-grow: 1;
+	order: 5;
+	position: relative;
+	width: 25%;
+	height: 25%;
+	margin: 2%;
+}
+.taiantlo {
+	width: 100%;
+	height: 100%;
+	background-image: url("TAIAN.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+	filter: blur(2px);
+    -webkit-filter: blur(2px);
+    transition: 0.5s;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+.tekstpiec {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+.taian:hover > .taiantlo {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transition: 0.5s;
+    opacity: 1;
+}
+.hono {
+	flex-grow: 1;
+	order: 6;
+	position: relative;
+	width: 25%;
+	height: 25%;
+	margin: 2%;
+}
+.honotlo {
+	width: 100%;
+	height: 100%;
+	background-image: url("HONO.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+	filter: blur(2px);
+    -webkit-filter: blur(2px);
+    transition: 0.5s;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+.tekstszesc {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+.hono:hover > .honotlo {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transition: 0.5s;
+    opacity: 1;
+}
+.wedrownictwo {
+	flex-grow: 1;
+	order: 7;
+	position: relative;
+	width: 25%;
+	height: 25%;
+	margin: 2%;
+}
+.wedrownictwotlo {
+	width: 100%;
+	height: 100%;
+	background-image: url("wedro.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+	filter: blur(2px);
+    -webkit-filter: blur(2px);
+    transition: 0.5s;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+.tekstsiedem {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+.wedrownictwo:hover > .wedrownictwotlo {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transition: 0.5s;
+    opacity: 1;
+}
+.materialy {
+	flex-grow: 1;
+	order: 8;
+	position: relative;
+	width: 25%;
+	height: 25%;
+	margin: 2%;
+}
+.materialytlo {
+	width: 100%;
+	height: 100%;
+	background-image: url("mat.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+	filter: blur(2px);
+    -webkit-filter: blur(2px);
+    transition: 0.5s;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+.tekstosiem {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+.materialy:hover > .materialytlo {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transition: 0.5s;
+    opacity: 1;
+}
+.flexible {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 200%;
+}
+@media screen and (max-width: 481px){
+    .tlo {
+        height: 150px;
+        height: 150px;
+    }
+    .kadra{
+        height: 240px;
+        
+    }
+    .tekstjeden {
+        position: absolute;
+        top: 30%;
+        font-size: 0.4em;
+    }
+    .onastlo {
+        height: 150px;
+        height: 150px;
+    }
+    .onas{
+        height: 240px;
+        
+    }
+    .tekstdwa {
+        position: absolute;
+        top: 30%;
+        font-size: 0.4em;
+    }
+    .aktualnoscitlo {
+        height: 150px;
+        height: 150px;
+    }
+    .aktualnosci{
+        height: 240px;
+        
+    }
+    .tekstcztery {
+        position: absolute;
+        top: 30%;
+        font-size: 0.4em;
+    }
+    .taiantlo {
+        height: 150px;
+        height: 150px;
+    }
+    .taian{
+        height: 240px;
+        
+    }
+    .tekstpiec {
+        position: absolute;
+        top: 30%;
+        font-size: 0.4em;
+    }
+    .honotlo {
+        height: 150px;
+        height: 150px;
+    }
+    .hono{
+        height: 240px;
+        
+    }
+    .tekstszesc {
+        position: absolute;
+        top: 30%;
+        font-size: 0.4em;
+    }
+    .galeriatlo, .wedrownictwo, .materialy {
+        display: none   ;
+    }
+    .galeria {
+        display: none;
+    }
+}
