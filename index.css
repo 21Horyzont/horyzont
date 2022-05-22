@@ -53,7 +53,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url("KADRA.jpg");
+	background-image: url("kadra.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	filter: blur(2px);
@@ -226,7 +226,7 @@ body {
 .taiantlo {
 	width: 100%;
 	height: 100%;
-	background-image: url("TAIAN.jpg");
+	background-image: url("taian.jpg");
 	background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.8;
@@ -268,7 +268,7 @@ body {
 .honotlo {
 	width: 100%;
 	height: 100%;
-	background-image: url("HONO.jpg");
+	background-image: url("hono.jpg");
 	background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.8;
