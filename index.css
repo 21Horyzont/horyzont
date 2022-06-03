@@ -1,469 +1,475 @@
 * {
     box-sizing: border-box;
 }
-
 html {
 	width: 100%;
 	height: 100%;
 }
 body {
+    width: 100%;
+	height: 100%;
+
 	margin: 0;
 	padding: 0;
-	width: 100%;
-	height: 100%;
 }
-.parallax {
-    background-image: url("g1.jpg");
-    position: fixed;
+
+
+.logo {
+    width: 100%;
+    height: 100%;
+
+    background-image: url("logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    z-index: -3;
+}
+.container{
+    width: 100%;
+    height: 100%;
+
+    background-image: url("bg_index.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    width:100%;
-    height: 100%; 
     background-size: cover;
+    position: fixed;
+
     z-index: -1;
 }
 
-.tekstjeden {
+.tekst {
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0, 0.4); 
     color: white;
     font-weight: bold;
+    text-align: center;
     border: 3px solid #f1f1f1;
+
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
     width: 80%;
     padding: 20px;
-    text-align: center;
+
+    transform: translate(-50%, -50%);
+    z-index: 2;
 }
-.kadra {
-	flex-grow: 1;
-	order: 1;
-	position: relative;
-	width: 25%;
+
+
+.onas {
+    width: 25%;
 	height: 25%;
 	margin: 2%;
+    position: relative;
+    order: 1;
+	flex-grow: 2;
 }
-.tlo {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
+.kadra {
+    width: 25%;
+	height: 25%;
+	margin: 2%;
+    position: relative;
+	order: 2;
+    flex-grow: 1;
+}
+.aktualnosci {
+    width: 25%;
+	height: 25%;
+	margin: 2%;
+    position: relative;
+	order: 3;
+    flex-grow: 4;
+}
+.taiyo {
+    width: 25%;
+	height: 25%;
+	margin: 2%;
+    position: relative;
+	order: 4;
+    flex-grow: 1;
+}
+.taian {
+    width: 25%;
+	height: 25%;
+	margin: 2%;
+    position: relative;
+	order: 5;
+    flex-grow: 1;
+}
+.hono {
+    width: 25%;
+	height: 25%;
+	margin: 2%;
+    position: relative;
+    order: 6;
+	flex-grow: 1;
+}
+.facebook1{
+    width: 10%;
+	height: 25%;
+	margin: 2%;
+    position: relative;
+	order: 8;
+    flex-grow: 1;
+}
+.instagram{
+    width: 10%;
+	height: 25%;
+	margin: 2%;
+    position: relative;
+	order: 9;
+    flex-grow: 1;
+}
+.materialy {
+    width: 25%;
+	height: 25%;
+	margin: 2%;
+    position: relative;
+	order: 10;
+    flex-grow: 1;
+}
+.facebook2{
+    width: 10%;
+	height: 25%;
+	margin: 2%;
+    position: relative;
+	order: 11;
+    flex-grow: 1;
+}
+.facebook3{
+    width: 10%;
+	height: 25%;
+	margin: 2%;
+    position: relative;
+	order: 12;
+    flex-grow: 1;
+}
+
+.onas_tlo {
+    width: 100%;
 	height: 100%;
-	background-image: url("kadra.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	filter: blur(2px);
-    -webkit-filter: blur(2px);
-    transition: 0.5s;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px black;
-    opacity: 0.8;
-    transition: 0.5s;
-}
-.kadra:hover > .tlo {
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-    transition: 0.5s;
-    opacity: 1;
-}
-.onastlo {
 	position: absolute;
-	left: 0%;
-	width: 100%;
-	height: 100%;
-	background-image: url("nas.jpg");
+	
+	background-image: url("onas.jpg");
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
     opacity: 0.8;
+    transition: 0.5s;
 	filter: blur(2px);
     -webkit-filter: blur(2px);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+
+}
+.kadra_tlo {
+    width: 100%;
+	height: 100%;
+	position: absolute;
+	
+	background-image: url("kadra.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center;
+
+    opacity: 0.8;
     transition: 0.5s;
+	filter: blur(2px);
+    -webkit-filter: blur(2px);
     border-radius: 20px;
     box-shadow: 5px 5px 5px black;
 }
-.onas:hover > .onastlo {
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-    transition: 0.5s;
-    opacity: 1;
-}
-.onas {
-	
-	flex-grow: 2;
-	order: 2;
-	position: relative;
-	width: 25%;
-	height: 25%;
-	margin: 2%;
-}
-.tekstdwa {
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0, 0.4); 
-    color: white;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-}
-.galeria {
-	flex-grow: 1;
-	order: 3;
-	position: relative;
-	
-	width: 25%;
-	height: 25%;
-	margin: 2%;
-}
-.galeriatlo {
+.aktualnosci_tlo {
 	width: 100%;
 	height: 100%;
+    position: absolute;
+
+	background-image: url("akt.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    opacity: 0.8;
+    transition: 0.5s;
+	filter: blur(2px);
+    -webkit-filter: blur(2px);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+.taiyo_tlo {
+	width: 100%;
+	height: 100%;
+    position: absolute;
+
 	background-image: url("galeria.jpg");
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
     opacity: 0.8;
+    transition: 0.5s;
 	filter: blur(2px);
     -webkit-filter: blur(2px);
-    transition: 0.5s;
     border-radius: 20px;
     box-shadow: 5px 5px 5px black;
 }
-.teksttrzy {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0, 0.4); 
-    color: white;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-}
-.galeria:hover > .galeriatlo {
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-    transition: 0.5s;
-    opacity: 1;
-}
-.logo {
-    
-    background-image: url("LogoHoryzont.png");
-    background-position: center;
-    background-size: cover;
-    background-size: auto;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-    background-repeat: no-repeat;
-    
-}
-.aktualnosci {
-	flex-grow: 4;
-	order: 2;
-	position: relative;
-	width: 25%;
-	height: 25%;
-	margin: 2%;
-}
-.aktualnoscitlo {
+.taian_tlo {
 	width: 100%;
 	height: 100%;
-	background-image: url("akt.jpg");
-	background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.8;
-	filter: blur(2px);
-    -webkit-filter: blur(2px);
-    transition: 0.5s;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px black;
-}
-.tekstcztery {
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0, 0.4); 
-    color: white;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-}
-.aktualnosci:hover > .aktualnoscitlo {
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-    transition: 0.5s;
-    opacity: 1;
-}
-.taian {
-	flex-grow: 1;
-	order: 5;
-	position: relative;
-	width: 25%;
-	height: 25%;
-	margin: 2%;
-}
-.taiantlo {
-	width: 100%;
-	height: 100%;
+
 	background-image: url("taian.jpg");
 	background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+
     opacity: 0.8;
+    transition: 0.5s;
 	filter: blur(2px);
     -webkit-filter: blur(2px);
-    transition: 0.5s;
     border-radius: 20px;
     box-shadow: 5px 5px 5px black;
 }
-.tekstpiec {
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0, 0.4); 
-    color: white;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-}
-.taian:hover > .taiantlo {
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-    transition: 0.5s;
-    opacity: 1;
-}
-.hono {
-	flex-grow: 1;
-	order: 6;
-	position: relative;
-	width: 25%;
-	height: 25%;
-	margin: 2%;
-}
-.honotlo {
+.hono_tlo {
 	width: 100%;
 	height: 100%;
+    position: absolute;
+
 	background-image: url("hono.jpg");
 	background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.8;
-	filter: blur(2px);
-    -webkit-filter: blur(2px);
-    transition: 0.5s;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px black;
-}
-.tekstszesc {
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0, 0.4); 
-    color: white;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-}
-.hono:hover > .honotlo {
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-    transition: 0.5s;
-    opacity: 1;
-}
-.wedrownictwo {
-	flex-grow: 1;
-	order: 7;
-	position: relative;
-	width: 25%;
-	height: 25%;
-	margin: 2%;
-}
-.wedrownictwotlo {
-	width: 100%;
-	height: 100%;
-	background-image: url("wedro.jpg");
-	background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
+
     opacity: 0.8;
+    transition: 0.5s;
 	filter: blur(2px);
     -webkit-filter: blur(2px);
-    transition: 0.5s;
     border-radius: 20px;
     box-shadow: 5px 5px 5px black;
 }
-.tekstsiedem {
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0, 0.4); 
-    color: white;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-}
-.wedrownictwo:hover > .wedrownictwotlo {
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-    transition: 0.5s;
-    opacity: 1;
-}
-.materialy {
-	flex-grow: 1;
-	order: 8;
-	position: relative;
-	width: 25%;
-	height: 25%;
-	margin: 2%;
-}
-.materialytlo {
+.materialy_tlo {
 	width: 100%;
 	height: 100%;
+    position: absolute;
+
 	background-image: url("mat.jpg");
 	background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+
     opacity: 0.8;
+    transition: 0.5s;
 	filter: blur(2px);
     -webkit-filter: blur(2px);
-    transition: 0.5s;
     border-radius: 20px;
     box-shadow: 5px 5px 5px black;
 }
-.tekstosiem {
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0, 0.4); 
-    color: white;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
+.facebook_tlo {
+    width: 100%;
+	height: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
+
+	background-image: url("fb.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    opacity: 0.8;
+    transition: 0.5s;
+	filter: blur(2px);
+    -webkit-filter: blur(2px);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
 }
-.materialy:hover > .materialytlo {
+.instagram_tlo {
+    width: 100%;
+	height: 100%;
+    position: absolute;
+
+	background-image: url("ig.webp");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    opacity: 0.8;
+    transition: 0.5s;
+	filter: blur(2px);
+    -webkit-filter: blur(2px);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.onas:hover > .onas_tlo {
     filter: blur(0px);
     -webkit-filter: blur(0px);
     transition: 0.5s;
     opacity: 1;
 }
+.kadra:hover > .kadra_tlo {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transition: 0.5s;
+    opacity: 1;
+}
+.aktualnosci:hover > .aktualnosci_tlo {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transition: 0.5s;
+    opacity: 1;
+}
+.taiyo:hover > .taiyo_tlo {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transition: 0.5s;
+    opacity: 1;
+}
+.taian:hover > .taian_tlo {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transition: 0.5s;
+    opacity: 1;
+}
+.hono:hover > .hono_tlo {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transition: 0.5s;
+    opacity: 1;
+}
+.facebook1:hover > .facebook_tlo {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transition: 0.5s;
+    opacity: 1;
+}
+.instagram:hover > .instagram_tlo {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transition: 0.5s;
+    opacity: 1;
+}
+.materialy:hover > .materialy_tlo {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transition: 0.5s;
+    opacity: 1;
+}
+.facebook2:hover > .facebook_tlo {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transition: 0.5s;
+    opacity: 1;
+}
+.facebook3:hover > .facebook_tlo {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transition: 0.5s;
+    opacity: 1;
+}
+
 .flexible {
+    width: 100%;
+	height: 200%;
+
     display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	width: 100%;
-	height: 200%;
 }
+
 @media screen and (max-width: 481px){
+
     .logo {
         background-size: 130vh;
     }
-    .tlo {
-        height: 150px;
-    }
-    .kadra{
-        height: 240px;
-        
-    }
-    .tekstjeden {
+
+    .tekst {
         position: absolute;
-        top: 30%;
-        font-size: 0.4em;
+        top: 50%;
+        font-size: 0.2em;
     }
-    .onastlo {
-        height: 150px;
-        height: 150px;
-        
-    }
+
     .onas{
         height: 240px;
-        
     }
-    .tekstdwa {
-        position: absolute;
-        top: 30%;
-        font-size: 0.4em;
-    }
-    .aktualnoscitlo {
+    .onas_tlo {
         height: 150px;
         height: 150px;
     }
+    
+    .kadra{
+        height: 240px;
+    }
+    .kadra_tlo {
+        height: 150px;
+    }
+
     .aktualnosci{
         height: 240px;
-        
     }
-    .tekstcztery {
-        position: absolute;
-        top: 30%;
-        font-size: 0.4em;
-    }
-    .taiantlo {
+    .aktualnosci_tlo {
         height: 150px;
         height: 150px;
     }
+
+    .taiyo{
+        height: 240px;
+    }
+    .taiyo_tlo {
+        height: 150px;
+        height: 150px;
+    }
+
     .taian{
         height: 240px;
-        
     }
-    .tekstpiec {
-        position: absolute;
-        top: 30%;
-        font-size: 0.4em;
-    }
-    .honotlo {
+    .taian_tlo {
         height: 150px;
         height: 150px;
     }
+
     .hono{
         height: 240px;
-        
     }
-    .tekstszesc {
-        position: absolute;
-        top: 30%;
-        font-size: 0.4em;
+    .hono_tlo {
+        height: 150px;
+        height: 150px;
     }
-    .galeriatlo, .wedrownictwo, .materialy {
-        display: none   ;
+
+    .facebook1{
+        height: 240px;
     }
-    .galeria {
+    .facebook1_tlo {
+        height: 150px;
+        height: 150px;
+    }
+
+    .instagram{
+        height: 240px;
+    }
+    .instagram_tlo {
+        height: 240px;
+        height: 240px;
+    }
+
+    .facebook2{
+        height: 240px;
+    }
+    .facebook2_tlo {
+        height: 150px;
+        height: 150px;
+    }
+
+    .facebook3{
+        height: 240px;
+    }
+    .facebook3_tlo {
+        height: 150px;
+        height: 150px;
+    }
+
+    .wedrownictwo, .materialy {
         display: none;
     }
 }

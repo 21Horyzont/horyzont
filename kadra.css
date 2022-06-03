@@ -1,53 +1,414 @@
+body {
+  margin: auto;
+  font-family: "Museo 300";
+  text-align: center;
+  margin-bottom: 3%;
+  background-image: url(bg_kadra.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
 
-  .header {
-    color:rgb(106, 134, 74);
-    min-height: 100px;
-    text-align: center;
-    font-size:70px;
-    text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
-  }
-  .main {
-    margin: 0 auto;
-    
-	  width: 65%;
-	  min-height: 400px;
-    background-color: rgba(255, 255, 255, 0.788);
-  } 
-  
-  body {
-    margin: auto;
-    font-family: "Museo 300";
-    text-align: center;
-    
-  }
-  .parallax {
-    background-image: url("kadra.jpg");
-    position: fixed;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    width:100%;
-    height: 100%; 
-    background-size: cover;
-    z-index: -1;
+.container {
+  width:100%;
+  height: 100%; 
+  position: relative;
+
+  z-index: -1;
 }
-b {
-    color: rgb(80, 131, 23);
+.header {
+  color:rgb(106, 134, 74);
+  min-height: 100px;
+  text-align: center;
+  font-size: 70px;
+  text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
+  margin-bottom: 6%;
+ }
+.link{
+  text-decoration: none;
 }
-hr {
-    width:80%;
-}
-li {
-  list-style-type: none;
+h2{
+  color: black; text-shadow: 0 0 0.3em #FFFFFF;
 }
 .text{
-
-  text-decoration: none;
-
+  text-align: center;
+  font-weight: bold;
+  font-style: normal;
+  padding: 2%;
+  margin-left: 8%;
 }
-@media screen and (max-width: 481px){
-  .main {
-    min-height: 400px;
-    font-size: 0.9em;
-  }
+.textlist{
+  margin: 3px;
+  font-size: 20px;
+  font-weight: bolder;
+  font-style: italic;
+  text-decoration: underline;
+  text-align: left; 
+  margin-left: 26%;
+  color: black; text-shadow: 0 0 0.3em #FFFFFF;
+}
+.image1{
+  width: 25%;
+  height: 90%;
+  margin-top: 1.5%;
+  margin-bottom: 3%;
+  margin-left: 1%;
+  margin-right: 3%;
+  float: left;
+  position: absolute;
+
+  background-image: url(karolinalichota.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 25%;
+}
+.image2{
+  width: 25%;
+  height: 90%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  margin-left: 1%;
+  margin-right: 3%;
+  float: left;
+  position: absolute;
+
+  background-image: url(bartekkubiczek.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 25%;
+}
+.image3{
+  width: 25%;
+  height: 90%;
+  margin-top: 1.5%;
+  margin-bottom: 2.5%;
+  margin-left: 1%;
+  margin-right: 3%;
+  float: left;
+  position: absolute;
+
+  background-image: url(nataliakieres.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 25%;
+}
+.image4{
+  width: 25%;
+  height: 90%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  margin-left: 1%;
+  margin-right: 3%;
+  float: left;
+  position: absolute;
+
+  background-image: url(wiktoriagwizdała.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 25%;
+}
+.image5{
+  width: 25%;
+  height: 90%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  margin-left: 1%;
+  margin-right: 3%;
+  float: left;
+  position: absolute;
+
+  background-image: url(wiktoriaorkisz.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 25%;
+}
+.image6{
+  width: 25%;
+  height: 90%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  margin-left: 1%;
+  margin-right: 3%;
+  float: left;
+  position: absolute;
+
+  background-image: url(zuzannagwizdala.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 25%;
+}
+.image7{
+  width: 25%;
+  height: 90%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  margin-left: 1%;
+  margin-right: 3%;
+  float: left;
+  position: absolute;
+
+  background-image: url(nataliaogrodnik.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 25%;
+}
+.image8{
+  width: 25%;
+  height: 90%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  margin-left: 1%;
+  margin-right: 3%;
+  float: left;
+  position: absolute;
+
+  background-image: url(igamodrzejewska.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 25%;
+}
+.image9{
+  width: 25%;
+  height: 90%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  margin-left: 1%;
+  margin-right: 3%;
+  float: left;
+  position: absolute;
+
+  background-image: url(arturkrawczyk.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 25%;
+}
+.image10{
+  width: 25%;
+  height: 90%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  margin-left: 1%;
+  margin-right: 3%;
+  float: left;
+  position: absolute;
+
+  background-image: url(aleksandrawidyma.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 25%;
+}
+
+.list{
+  list-style: inside;
+}
+.druzynowy{
+  width: 43%;
+  height: 33%;
+
+  margin: 10px;
+  margin-left: 1%;
+
+  float: left;
+  clear: both;
+	position: relative;  
+        left: 48%;  
+        transform: translate(-50%, -50%);
+
+  border-radius: 20px;
+  border: 2px #1f2122 solid;
+  background-color: rgba(57, 75, 74, 0.140);
+  order: 1;
+}
+.opiekun_druzyny{
+  width: 43%;
+  height: 33%;
+
+  margin: 10px;
+  margin-left: 1%;
+
+  float: left;
+  clear: both;
+	position: relative;  
+        left: 48%;  
+        transform: translate(-50%, -50%);
+
+  border-radius: 20px;
+  border: 2px #1f2122 solid;
+  background-color: rgba(57, 75, 74, 0.140);
+  order: 2;
+}
+.przyboczny1{
+  width: 43%;
+  height: 33%;
+
+  margin: 10px;
+  margin-left: 1%;
+
+  float: left;
+  clear: both;
+	position: relative;  
+        left: 48%;  
+        transform: translate(-50%, -50%);
+
+  border-radius: 20px;
+  border: 2px #1f2122 solid;
+  background-color: rgba(57, 75, 74, 0.140);
+  order: 3;
+}
+.przyboczny2{
+  width: 43%;
+  height: 33%;
+
+  margin: 10px;
+  margin-left: 1%;
+
+  float: left;
+  clear: both;
+	position: relative;  
+        left: 48%;  
+        transform: translate(-50%, -50%);
+
+  border-radius: 20px;
+  border: 2px #1f2122 solid;
+  background-color: rgba(57, 75, 74, 0.140);
+  order: 4;
+}
+.zastepowa1{
+  width: 43%;
+  height: 33%;
+
+  margin: 10px;
+  margin-left: 1%;
+
+  float: left;
+  clear: both;
+	position: relative;  
+        left: 48%;  
+        transform: translate(-50%, -50%);
+
+  border-radius: 20px;
+  border: 2px #1f2122 solid;
+  background-color: rgba(57, 75, 74, 0.140);
+  order: 5;
+}
+.podzastepowa1{
+  width: 43%;
+  height: 33%;
+
+  margin: 10px;
+  margin-left: 1%;
+
+  float: left;
+  clear: both;
+	position: relative;  
+        left: 48%;  
+        transform: translate(-50%, -50%);
+
+  border-radius: 20px;
+  border: 2px #1f2122 solid;
+  background-color: rgba(57, 75, 74, 0.140);
+  order: 6;
+}
+.podzastepowa2{
+  width: 43%;
+  height: 33%;
+
+  margin: 10px;
+  margin-left: 1%;
+
+  float: left;
+  clear: both;
+	position: relative;  
+        left: 48%;  
+        transform: translate(-50%, -50%);
+
+  border-radius: 20px;
+  border: 2px #1f2122 solid;
+  background-color: rgba(57, 75, 74, 0.140);
+  order: 7;
+}
+.zastepowa2{
+  width: 43%;
+  height: 33%;
+
+  margin: 10px;
+  margin-left: 1%;
+
+  float: left;
+  clear: both;
+	position: relative;  
+        left: 48%;  
+        transform: translate(-50%, -50%);
+
+  border-radius: 20px;
+  border: 2px #1f2122 solid;
+  background-color: rgba(57, 75, 74, 0.140);
+  order: 8;
+}
+.podzastepowy{
+  width: 43%;
+  height: 33%;
+
+  margin: 10px;
+  margin-left: 1%;
+
+  float: left;
+  clear: both;
+	position: relative;  
+        left: 48%;  
+        transform: translate(-50%, -50%);
+
+  border-radius: 20px;
+  border: 2px #1f2122 solid;
+  background-color: rgba(57, 75, 74, 0.140);
+  order: 9;
+}
+.zastepowa3{
+  width: 43%;
+  height: 33%;
+
+  margin: 10px;
+  margin-left: 1%;
+
+  float: left;
+  clear: both;
+	position: relative;  
+        left: 48%;  
+        transform: translate(-50%, -50%);
+
+  border-radius: 20px;
+  border: 2px #1f2122 solid;
+  background-color: rgba(57, 75, 74, 0.140);
+  order: 10;
 }
