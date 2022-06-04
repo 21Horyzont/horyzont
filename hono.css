@@ -17,11 +17,6 @@
     margin: 2%;
     background-color: rgba(255, 255, 255, 0.788);
   } 
-  @media all and (min-width: 800px) {
-    .header {order:1; }
-    .main    { flex: 3 0px; }  
-    .main    { order: 2; }
-  }
   body {
     margin: auto;
     font-family: "Museo 300"; 
@@ -45,6 +40,16 @@ hr {
 }
 p {
     text-align: center;
+}
+
+img{
+  width: 550px;
+}
+
+@media all and (min-width: 800px) {
+  .header {order:1; }
+  .main    { flex: 3 0px; }  
+  .main    { order: 2; }
 }
 
   
