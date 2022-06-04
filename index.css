@@ -63,7 +63,7 @@ body {
 	height: 25%;
 	margin: 2%;
     position: relative;
-    order: 1;
+    order: 2;
 	flex-grow: 2;
 }
 .kadra {
@@ -107,19 +107,17 @@ body {
 	flex-grow: 1;
 }
 .facebook1{
-    width: 10%;
+    width: 50%;
 	height: 25%;
 	margin: 2%;
     position: relative;
-	order: 8;
     flex-grow: 1;
 }
 .instagram{
-    width: 10%;
+    width: 50%;
 	height: 25%;
 	margin: 2%;
     position: relative;
-	order: 9;
     flex-grow: 1;
 }
 .materialy {
@@ -127,23 +125,24 @@ body {
 	height: 25%;
 	margin: 2%;
     position: relative;
-	order: 10;
+    order: 7;
     flex-grow: 1;
 }
 .facebook2{
-    width: 10%;
+    width: 50%;
 	height: 25%;
 	margin: 2%;
     position: relative;
 	order: 11;
     flex-grow: 1;
 }
+
 .facebook3{
-    width: 10%;
+    width: 50%;
 	height: 25%;
 	margin: 2%;
     position: relative;
-	order: 12;
+
     flex-grow: 1;
 }
 
@@ -378,8 +377,10 @@ body {
 	flex-wrap: wrap;
 }
 .box {
-    width:300px;
+    width: 400px;
     height: auto;
+    float: left;
+    order:8;
 }
 
 @media screen and (max-width: 481px){
@@ -477,3 +478,4 @@ body {
         display: none;
     }
 }
+

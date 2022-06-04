@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="logo.png">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="123.css">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="Keywords" content="ZHP, Horyzont, Drużyna, Środowisko, Organizacja, Młodzież, Zabawa, Nauka, Wychowanie, Harcerze, Harcerki, Ekologia">
@@ -56,42 +57,54 @@
             <div class="tekst"><h2>HONO</h2></div>
         </a>
         </div>
-        <div class="box">
-            <div class="facebook1">
-            <a href="https://www.facebook.com/Zastep.TAIAN" class="facebook_tlo" target="_blank">
-            <div class="facebook_tlo"></div>
-            <div class="tekst"><h2>Zastęp Taian</h2></div>
-        </a>
-        </div>
-
-        <div class="instagram">
-            <a href="https://instagram.com/honozhp?igshid=YmMyMTA2M2Y=" class="instagram_tlo" target="_blank">
-            <div class="instagram_tlo"></div>
-            <div class="tekst"><h2>Zastęp Hono</h2></div>
-        </a>
-        </div>
-
         <div class="materialy">
             <a href="materialy.html" class="materialy_tlo">
             <div class="materialy_tlo"></div>
             <div class="tekst"><h2>Materiały</h2></div>
         </a>
         </div>
-
-        <div class="facebook2">
-            <a href="https://www.facebook.com/21esdhHORYZONT" class="facebook_tlo" target="_blank">
-            <div class="facebook_tlo"></div>
-            <div class="tekst"><h2>Drużyna</h2></div>
-        </a>
-        </div>
-
-        <div class="facebook3">
-            <a href="https://www.facebook.com/ptakiptakom" class="facebook_tlo" target="_blank">
-            <div class="facebook_tlo"></div>
-            <div class="tekst"><h2>Szczep</h2></div>
-        </a>
-        </div></div>
-        
     
+    </div>
+    <div class="navigation">
+        <ul id="navi">
+            <li class="list active">
+                <a target="_blank" href="#">
+                    <span class="icon"><ion-icon name="logo-facebook"></ion-icon></span>
+                    <span class="title">DRUŻYNA</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="https://www.facebook.com/ptakiptakom">
+                    <span class="icon"><ion-icon name="logo-facebook"></ion-icon></span>
+                    <span class="title">SZCZEP</span>
+                </a>
+            </li>
+            <li class="list">
+                <a target="_blank" href="https://www.facebook.com/Zastep.TAIAN">
+                    <span class="icon"><ion-icon name="logo-facebook"></ion-icon></span>
+                    <span class="title">TAIAN</span>
+                </a>
+            </li>
+            <li class="list">
+                <a target="_blank" href="https://instagram.com/honozhp">
+                    <span class="icon"><ion-icon name="logo-instagram"></ion-icon></span>
+                    <span class="title">HONO</span>
+                </a>
+            </li>
+        </ul>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+    var header = document.getElementById("navi");
+    var btns = header.getElementsByClassName("list");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+            });
+}
+</script>
 </body>    
 </html>
