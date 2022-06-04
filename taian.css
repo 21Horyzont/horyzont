@@ -17,9 +17,8 @@
     font-family: "Museo 300";
     text-align: center;
     font-size: 1.2em;
-    
   }
-  .insta{
+  .fb{
     width: 15%;
     height: auto;
     }
@@ -47,10 +46,8 @@
   p {
       text-align: center;
   }
-  .zdj{
-
+  .img{
    width: 550px;
-
   }
   @media screen and (max-width: 481px){
     .main {
