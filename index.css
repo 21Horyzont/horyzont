@@ -377,6 +377,10 @@ body {
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+.box {
+    width:300px;
+    height: auto;
+}
 
 @media screen and (max-width: 481px){
 
