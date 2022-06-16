@@ -9,4 +9,3 @@ RewriteRule horyzont index.html
 RewriteRule kadra kadra.html
 RewriteRule aktualnosci akt.html
 RewriteRule hono hono.html
-RewriteRule kontakt-programista-php kontakt.html

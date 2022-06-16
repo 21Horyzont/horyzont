@@ -24,6 +24,7 @@ body {
   font-size: 70px;
   text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
   margin-bottom: 6%;
+  margin-top: 10px
  }
 .link{
   text-decoration: none;
