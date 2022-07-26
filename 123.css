@@ -19,7 +19,7 @@ body .navigation {
 }
 .navigation {
     position: fixed;
-    top: 0;
+    top: 50px;
     right: 0;
     width: 70px;
     box-shadow: 10px 0 0 #3bc742;
