@@ -43,7 +43,7 @@ p {
 }
 
 .img{
-  width: 250vh;
+  width: 130vh;
 }
 
 @media all and (min-width: 800px) {
