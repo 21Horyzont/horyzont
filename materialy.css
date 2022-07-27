@@ -27,11 +27,11 @@ body {
 
 .wedrownictwo {
   width: 25%;
-height: 25%;
-margin: 2%;
+  height: 25%;
+  margin: 2%;
   position: relative;
-  order: 7;
-flex-grow: 1;
+  order: 1;
+  flex-grow: 1;
 }
 .wedrownictwo_tlo {
 	width: 100%;
