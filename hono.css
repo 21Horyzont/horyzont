@@ -43,8 +43,8 @@ p {
 }
 
 .img{
-  width: 130vh;
-}
+  width: 550px;
+ }
 
 @media all and (min-width: 800px) {
   .header {order:1; }
