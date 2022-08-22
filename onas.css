@@ -1,65 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+html {
+	width: 100%;
+	height: 200vh;
+}
+body{
+    width: 100%;
+    height: 200vh;
 
-  .header {
+    background-image: url("tlo.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -3;
+
+    overflow-x:hidden;
+}
+header{
     color:rgb(106, 134, 74);
     min-height: 100px;
     text-align: center;
-    font-size:70px;
-    text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
-  }
-  .main {
-    margin: 0 auto;
-	  width: 75%;
-	  min-height: 400px;
-    background-color: rgba(255, 255, 255, 0.788);
-  } 
-
-  body {
-    margin: auto;
-    font-family: "Museo 300";
-    text-align: center;
-    font-size: 1.2em;
-    
-  }
-  .parallax {
-    background-image: url("onas.jpg");
-    position: fixed;
-    background-repeat: no-repeat;
-    
-    background-attachment: fixed;
-    background-position: center;
+    font-size: 78px;
+    text-shadow: -2.3px 0 black, 0 2.3px black, 2.3px 0 black, 0 -2.3px black;
+    padding: 5px;
+}
+hr{
     width: 100%;
-    height: 100%; 
-    background-size: cover;
-    z-index: -1;
+    height: 3px;
+    background: black;
 }
-p {
-  margin-left: 40px;
-  margin-right: 40px;
+p{
+    text-align: center;
 }
+p.wstep{
+    font-size: 20px;
+    font-weight: bold;
+}
+p.video{
+    font-size: 20px;
+    margin-top: 2%;
+    font-weight: bold;
+}
+ul{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+ul.druzynowy{
+    float: left;
+}
+ul.wydarzenie{
+    float: left;
+}
+
+#container{
+    width: 100%;
+    height: 200vh;
+    background-color: rgba(182, 212, 158, 0.2);
+}
+
+#druzyna_wstep{
+    height: 320px;
+    margin-left: 1%;
+}
+.text_img{
+    float: left;
+    height: 315px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+.img{
+    float: right;
+}
+
+#druzyna_promocja{
+    height: 320px;
+    margin-left: 1%;
+}
+.video_p{
+    float: left;
+}
+.text_video{
+    float: right;
+    height: 315px; 
+    position: relative;
+    top: 65px;
+    right: 65px;
+}
+
+#druzynowi{
+    float: left;
+    position: relative;
+
+}
+
+#wydarzenia{
+    float: left;
+}
+
+img{
+    float: right ;
+    width: 797px;
+    height: 313px;
+}
+
 @media screen and (max-width: 481px){
-  .main {
-    min-height: 400px;
-    font-size: 0.9em;
+    .main {
+      min-height: 400px;
+      font-size: 0.9em;
+    }
   }
-}
-img {
-  width: 80%;
-  height: auto;
-}
-ul {
-  text-align: left;
-}
-.autor {
-  font-style: italic;
-  font-size: 0.8em;
-  text-align: right;
-}
-a :link {
-  color: lightgreen;
-}
-
-.zdj{
-
-  width: 40%;
-
-}  
+  img {
+    width: 80%;
+    height: auto;
+  }
+  ul {
+    text-align: left;
+  }
+  .autor {
+    font-style: italic;
+    font-size: 0.8em;
+    text-align: right;
+  }
+  a :link {
+    color: lightgreen;
+  }
+  
+  .zdj{
+    width: 40%;
+  }  
